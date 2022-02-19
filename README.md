@@ -17,7 +17,7 @@ Figure 2: . **Decomposition diagram of large-kernel convolution. A standard conv
 
 
 
-![LKA](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/decomposition.png)
+![LKA](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/LKA.png)
 
 Figure 3: The structure of different modules: (a) the proposed Large Kernel Attention (LKA); (b) non-attention module; (c) the self-attention module (d) a stage of our Visual Attention Network (VAN). CFF means convolutional feed-forward network. The difference between (a) and (b) is the element-wise multiply. It is worth noting that (c) is designed for 1D sequences. .
 
