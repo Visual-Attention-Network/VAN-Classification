@@ -3,7 +3,7 @@
 This is a PyTorch implementation of **VAN** proposed by our paper "**Visual Attention Network**". 
 
 
-![image-20220219205932862](/Users/guomenghao/Library/Application Support/typora-user-images/image-20220219205932862.png)
+![Comparsion](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/Comparsion.png)
 
 Figure 1: **Compare with different vision backbones on ImageNet-1K validation set.** 
 
@@ -11,13 +11,13 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 While originally designed for natural language processing (NLP) tasks, the self-attention mechanism has recently taken various computer vision areas by storm. However, the 2D nature of images brings three challenges for applying self-attention in computer vision. (1) Treating images as 1D sequences neglects their 2D structures. (2) The quadratic complexity is too expensive for high-resolution images. (3) It only captures spatial adaptability but ignores channel adaptability. In this paper, we propose a novel large kernel attention (LKA) module to enable self-adaptive and long-range correlations in self-attention while avoiding the above issues. We further introduce a novel neural network based on LKA, namely Visual Attention Network (VAN). While extremely simple and efficient, VAN outperforms the state-of-the-art vision transformers (ViTs) and convolutional neural networks (CNNs) with a large margin in extensive experiments, including image classification, object detection, semantic segmentation, instance segmentation, etc.
 
-![image-20220219210214750](/Users/guomenghao/Library/Application Support/typora-user-images/image-20220219210214750.png)
+![Decomposition](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/decomposition.png)
 
 Figure 2: . **Decomposition diagram of large-kernel convolution. A standard convolution can be decomposed into three parts: a depth-wise convolution (DW-Conv), a depth-wise dilation convolution (DW-D-Conv) and a 1×1 convolution (1×1 Conv). **
 
 
 
-![image-20220219214651109](/Users/guomenghao/Library/Application Support/typora-user-images/image-20220219214651109.png)
+![LKA](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/decomposition.png)
 
 Figure 3: The structure of different modules: (a) the proposed Large Kernel Attention (LKA); (b) non-attention module; (c) the self-attention module (d) a stage of our Visual Attention Network (VAN). CFF means convolutional feed-forward network. The difference between (a) and (b) is the element-wise multiply. It is worth noting that (c) is designed for 1D sequences. .
 
