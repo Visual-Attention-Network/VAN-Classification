@@ -17,6 +17,10 @@ Figure 2: . **Decomposition diagram of large-kernel convolution. A standard conv
 
 
 
+![image-20220219214651109](/Users/guomenghao/Library/Application Support/typora-user-images/image-20220219214651109.png)
+
+Figure 3: The structure of different modules: (a) the proposed Large Kernel Attention (LKA); (b) non-attention module; (c) the self-attention module (d) a stage of our Visual Attention Network (VAN). CFF means convolutional feed-forward network. The difference between (a) and (b) is the element-wise multiply. It is worth noting that (c) is designed for 1D sequences. .
+
 ## Image Classification
 
 Data prepare: ImageNet with the following folder structure.
@@ -51,6 +55,7 @@ Data prepare: ImageNet with the following folder structure.
 
 
 #### Usage
+
 
 ### 3. Train 
 
