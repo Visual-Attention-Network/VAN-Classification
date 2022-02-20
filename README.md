@@ -54,8 +54,6 @@ Data prepare: ImageNet with the following folder structure.
 | VAN-Huge  |    TODO    |  TODO  |    TODO     |                             TODO                             |
 
 
-#### Usage
-
 
 ### 3. Train 
 
