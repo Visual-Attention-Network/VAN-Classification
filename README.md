@@ -55,7 +55,14 @@ Data prepare: ImageNet with the following folder structure.
 
 
 
-### 3. Train 
+### 3.Requirement
+
+```
+1. Pytorch >= 1.7
+2. timm == 0.4.12
+```
+
+### 4. Train 
 
 We use 8 GPUs for training by default.  Run command (It has been writen in train.sh):
 
@@ -68,7 +75,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash distributed_train.sh 8 /path/to/imagen
 
 
 
-### 4. Validate
+### 5. Validate
 
 Run command (It has been writen in eval.sh) as:
 
@@ -80,7 +87,7 @@ python3 validate.py /path/to/imagenet --model $MODEL \
 
 ```
 
-## Acknowledgment
+## 6.Acknowledgment
 
 Our implementation is mainly based on [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) and [PoolFormer](https://github.com/sail-sg/poolformer). Thanks for their authors. 
 
