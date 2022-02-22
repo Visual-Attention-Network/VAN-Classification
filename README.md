@@ -1,6 +1,6 @@
 # Visual Attention Network (VAN)
 
-This is a PyTorch implementation of **VAN** proposed by our paper "**Visual Attention Network**". 
+This is a PyTorch implementation of **VAN** proposed by our paper "**Visual Attention Network**". [paper pdf](https://arxiv.org/pdf/2202.09741.pdf)
 
 
 ![Comparsion](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/Comparsion.png)
