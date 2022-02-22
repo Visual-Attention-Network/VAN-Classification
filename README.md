@@ -13,7 +13,7 @@ While originally designed for natural language processing (NLP) tasks, the self-
 
 ![Decomposition](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/decomposition.png)
 
-Figure 2: . **Decomposition diagram of large-kernel convolution. A standard convolution can be decomposed into three parts: a depth-wise convolution (DW-Conv), a depth-wise dilation convolution (DW-D-Conv) and a 1×1 convolution (1×1 Conv). **
+Figure 2: **Decomposition diagram of large-kernel convolution. A standard convolution can be decomposed into three parts: a depth-wise convolution (DW-Conv), a depth-wise dilation convolution (DW-D-Conv) and a 1×1 convolution (1×1 Conv). **
 
 
 
