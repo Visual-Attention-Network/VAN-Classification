@@ -62,6 +62,8 @@ Data prepare: ImageNet with the following folder structure.
 | VAN-Large |    44.8    |  9.0   |    83.9     |[Google Drive](https://drive.google.com/file/d/10n6u-W3IrqiCD-7wkotejV_1XiS9kuWF/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/0201745f6920482490a0/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Large) |
 | VAN-Huge  |    TODO    |  TODO  |    TODO     |                             TODO                             |
 
+Unofficial [keras (tensorflow)](https://github.com/shkarupa-alex/tfvan) version.
+
 
 
 ### 3.Requirement
