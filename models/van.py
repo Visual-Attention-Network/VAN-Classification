@@ -272,14 +272,35 @@ def _conv_filter(state_dict, patch_size=16):
     return out_dict
 
 
+model_urls = {
+    "van_tiny": "https://huggingface.co/Visual-Attention-Network/VAN-Tiny/resolve/main/van_tiny_754.pth.tar",
+    "van_small": "https://huggingface.co/Visual-Attention-Network/VAN-Small/resolve/main/van_small_811.pth.tar",
+    "van_base": "https://huggingface.co/Visual-Attention-Network/VAN-Base/resolve/main/van_base_828.pth.tar",
+    "van_large": "https://huggingface.co/Visual-Attention-Network/VAN-Large/resolve/main/van_large_839.pth.tar",
+}
+
+
+def load_model_weights(model, arch, kwargs):
+    url = model_urls[arch]
+    checkpoint = torch.hub.load_state_dict_from_url(
+        url=url, map_location="cpu", check_hash=True
+    )
+    if "num_classes" in kwargs and kwargs["num_classes"] != 1000:
+        del checkpoint["state_dict"]["head.weight"]
+        del checkpoint["state_dict"]["head.bias"]
+    model.load_state_dict(checkpoint, strict=False)
+    return model
+
+
 @register_model
 def van_tiny(pretrained=False, **kwargs):
     model = VAN(
-        embed_dims=[32, 64, 160, 256], mlp_ratios=[8, 8, 4, 4], 
+        embed_dims=[32, 64, 160, 256], mlp_ratios=[8, 8, 4, 4],
         norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[3, 3, 5, 2],
         **kwargs)
     model.default_cfg = _cfg()
-
+    if pretrained:
+        model = load_model_weights(model, "van_tiny", kwargs)
     return model
 
 
@@ -290,26 +311,28 @@ def van_small(pretrained=False, **kwargs):
         norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[2, 2, 4, 2],
         **kwargs)
     model.default_cfg = _cfg()
-
+    if pretrained:
+        model = load_model_weights(model, "van_small", kwargs)
     return model
 
 @register_model
 def van_base(pretrained=False, **kwargs):
     model = VAN(
-        embed_dims=[64, 128, 320, 512], mlp_ratios=[8, 8, 4, 4], 
-        norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[3, 3, 12, 3], 
+        embed_dims=[64, 128, 320, 512], mlp_ratios=[8, 8, 4, 4],
+        norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[3, 3, 12, 3],
         **kwargs)
     model.default_cfg = _cfg()
-
+    if pretrained:
+        model = load_model_weights(model, "van_base", kwargs)
     return model
 
 @register_model
 def van_large(pretrained=False, **kwargs):
     model = VAN(
-        embed_dims=[64, 128, 320, 512], mlp_ratios=[8, 8, 4, 4], 
-        norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[3, 5, 27, 3], 
+        embed_dims=[64, 128, 320, 512], mlp_ratios=[8, 8, 4, 4],
+        norm_layer=partial(nn.LayerNorm, eps=1e-6), depths=[3, 5, 27, 3],
         **kwargs)
     model.default_cfg = _cfg()
-
+    if pretrained:
+        model = load_model_weights(model, "van_large", kwargs)
     return model
-
