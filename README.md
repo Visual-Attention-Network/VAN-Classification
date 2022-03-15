@@ -7,7 +7,7 @@ This is a PyTorch implementation of **VAN** proposed by our paper "**Visual Atte
 Figure 1: **Compare with different vision backbones on ImageNet-1K validation set.** 
 
 
-### Citation:
+## Citation:
 ```
 @article{guo2022visual,
   title={Visual Attention Network},
@@ -17,11 +17,11 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 }
 ```
 
-### News:
+## News:
 
-2022.02.22 Release paper on ArXiv.
+### 2022.02.22 Release paper on ArXiv.
 
-2022.03.15 Supported by [Hugging Face](https://github.com/huggingface/transformers).
+### 2022.03.15 Supported by [Hugging Face](https://github.com/huggingface/transformers).
 
 ### Abstract: 
 
