@@ -16,6 +16,12 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
   year={2022}
 }
 ```
+
+### News:
+
+2022.02.22 Release paper on ArXiv.
+2022.03.15 Supported by [Hugging Face](https://github.com/huggingface/transformers).
+
 ### Abstract: 
 
 While originally designed for natural language processing (NLP) tasks, the self-attention mechanism has recently taken various computer vision areas by storm. However, the 2D nature of images brings three challenges for applying self-attention in computer vision. (1) Treating images as 1D sequences neglects their 2D structures. (2) The quadratic complexity is too expensive for high-resolution images. (3) It only captures spatial adaptability but ignores channel adaptability. In this paper, we propose a novel large kernel attention (LKA) module to enable self-adaptive and long-range correlations in self-attention while avoiding the above issues. We further introduce a novel neural network based on LKA, namely Visual Attention Network (VAN). While extremely simple and efficient, VAN outperforms the state-of-the-art vision transformers (ViTs) and convolutional neural networks (CNNs) with a large margin in extensive experiments, including image classification, object detection, semantic segmentation, instance segmentation, etc.
