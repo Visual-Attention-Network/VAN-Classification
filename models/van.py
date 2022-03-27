@@ -47,7 +47,7 @@ class Mlp(nn.Module):
 
 
 
-class AttentionModule(nn.Module):
+class LKA(nn.Module):
     def __init__(self, dim):
         super().__init__()
         self.conv0 = nn.Conv2d(dim, dim, 5, padding=2, groups=dim)
@@ -64,13 +64,13 @@ class AttentionModule(nn.Module):
         return u * attn
 
 
-class SpatialAttention(nn.Module):
+class Attention(nn.Module):
     def __init__(self, d_model):
         super().__init__()
 
         self.proj_1 = nn.Conv2d(d_model, d_model, 1)
         self.activation = nn.GELU()
-        self.spatial_gating_unit = AttentionModule(d_model)
+        self.spatial_gating_unit = LKA(d_model)
         self.proj_2 = nn.Conv2d(d_model, d_model, 1)
 
     def forward(self, x):
@@ -87,7 +87,7 @@ class Block(nn.Module):
     def __init__(self, dim, mlp_ratio=4., drop=0.,drop_path=0., act_layer=nn.GELU):
         super().__init__()
         self.norm1 = nn.BatchNorm2d(dim)
-        self.attn = SpatialAttention(dim)
+        self.attn = Attention(dim)
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
 
         self.norm2 = nn.BatchNorm2d(dim)
