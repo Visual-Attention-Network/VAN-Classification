@@ -23,7 +23,7 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 ### 2022.03.15 Supported by [Hugging Face](https://github.com/huggingface/transformers).
 
-### 2022.05.01 Supported by [mmclassification](https://github.com/open-mmlab/mmclassification).
+### 2022.05.01 Supported by [OpenMMLab](https://github.com/open-mmlab/mmclassification).
 
 ### Abstract: 
 
