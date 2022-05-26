@@ -19,7 +19,9 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 ## News:
 
-### 2022.02.22 Release paper on ArXiv.
+### 2022.02.22 Release paper on ArXiv and code on github.
+
+### 2022.02.25 Supported by [Jimm](https://github.com/Jittor-Image-Models/Jittor-Image-Models)
 
 ### 2022.03.15 Supported by [Hugging Face](https://github.com/huggingface/transformers).
 
