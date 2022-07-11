@@ -1,5 +1,7 @@
 # Visual Attention Network (VAN)  [paper pdf](https://arxiv.org/pdf/2202.09741.pdf)
 
+## ImageNet-22K pretrained models will be Released before July 20, 2022.
+
 This is a PyTorch implementation of **VAN** proposed by our paper "**Visual Attention Network**".
 
 ![Comparsion](https://github.com/Visual-Attention-Network/VAN-Classification/blob/main/images/Comparsion.png)
