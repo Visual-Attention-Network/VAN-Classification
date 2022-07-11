@@ -29,6 +29,10 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 ### 2022.05 Supported by [OpenMMLab](https://github.com/open-mmlab/mmclassification).
 
+### For More Code, please refer to  https://paperswithcode.com/paper/visual-attention-network 
+
+### 2022.07.08 Update paper on ArXiv. (ImageNet-22K results, SOTA for panoptic segmentation (58.2 PQ).
+
 
 ### Abstract: 
 
@@ -66,17 +70,16 @@ Data prepare: ImageNet with the following folder structure.
 
 
 
-### 2. VAN Models
+### 2. VAN Models (IN-1K)
 
 | Model     | #Params(M) | GFLOPs | Top1 Acc(%) |                           Download                           |
 | :-------- | :--------: | :----: | :---------: | :----------------------------------------------------------: |
-| VAN-Tiny  |    4.1     |  0.9   |    75.4     |[Google Drive](https://drive.google.com/file/d/1KYoIe1Zl3ZaPCwRuvnpkLyOEK04JKemu/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/aada2242a16245d6a561/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Tiny-original) |
-| VAN-Small |    13.9    |  2.5   |    81.1     |[Google Drive](https://drive.google.com/file/d/1LFsJHwxAs1TcXAjJ28G86_jwYwV8DzuG/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/dd3eb73692f74a2499c9/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Small-original) |
-| VAN-Base  |    26.6    |  5.0   |    82.8     |[Google Drive](https://drive.google.com/file/d/1qApsgXCbngNYOji2UzJsfeEsPOu6dBo3/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/58e7acceaf334ecdba89/?dl=1),[Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Base-original), |
-| VAN-Large |    44.8    |  9.0   |    83.9     |[Google Drive](https://drive.google.com/file/d/10n6u-W3IrqiCD-7wkotejV_1XiS9kuWF/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/0201745f6920482490a0/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Large-original) |
-| VAN-Huge  |    TODO    |  TODO  |    TODO     |                             TODO                             |
+| VAN-B0  |    4.1     |  0.9   |    75.4     |[Google Drive](https://drive.google.com/file/d/1KYoIe1Zl3ZaPCwRuvnpkLyOEK04JKemu/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/aada2242a16245d6a561/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Tiny-original) |
+| VAN-B1 |    13.9    |  2.5   |    81.1     |[Google Drive](https://drive.google.com/file/d/1LFsJHwxAs1TcXAjJ28G86_jwYwV8DzuG/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/dd3eb73692f74a2499c9/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Small-original) |
+| VAN-B2  |    26.6    |  5.0   |    82.8     |[Google Drive](https://drive.google.com/file/d/1qApsgXCbngNYOji2UzJsfeEsPOu6dBo3/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/58e7acceaf334ecdba89/?dl=1),[Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Base-original), |
+| VAN-B3 |    44.8    |  9.0   |    83.9     |[Google Drive](https://drive.google.com/file/d/10n6u-W3IrqiCD-7wkotejV_1XiS9kuWF/view?usp=sharing), [Tsinghua Cloud](https://cloud.tsinghua.edu.cn/f/0201745f6920482490a0/?dl=1), [Hugging Face 🤗](https://huggingface.co/Visual-Attention-Network/VAN-Large-original) |
+| VAN-B4  |    TODO    |  TODO  |    TODO     |                             TODO                             |
 
-Unofficial [keras (tensorflow)](https://github.com/shkarupa-alex/tfvan) version.
 
 
 
