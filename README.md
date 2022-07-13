@@ -31,9 +31,9 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 ### 2022.05 Supported by [OpenMMLab](https://github.com/open-mmlab/mmclassification).
 
-### For More Code, please refer to  https://paperswithcode.com/paper/visual-attention-network 
+### For More Code, please refer to [Paper with code](https://paperswithcode.com/paper/visual-attention-network).
 
-### 2022.07.08 Update paper on ArXiv. (ImageNet-22K results, SOTA for panoptic segmentation (58.2 PQ).
+### 2022.07.08 Update paper on ArXiv. (ImageNet-22K results, SOTA for panoptic segmentation (58.2 PQ). Segmentation models are [available](https://github.com/Visual-Attention-Network/VAN-Classification).
 
 
 ### Abstract: 
