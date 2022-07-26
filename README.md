@@ -31,7 +31,8 @@ Figure 1: **Compare with different vision backbones on ImageNet-1K validation se
 
 ### For More Code, please refer to [Paper with code](https://paperswithcode.com/paper/visual-attention-network).
 
-### 2022.07.08 Update paper on ArXiv. (ImageNet-22K results, SOTA for panoptic segmentation (58.2 PQ). Segmentation models are [available](https://github.com/Visual-Attention-Network/VAN-Classification).
+### 2022.07.08 Update paper on ArXiv. (ImageNet-22K results, SOTA for panoptic segmentation (58.2 PQ). Segmentation models are [available](https://github.com/Visual-Attention-Network/VAN-Classification). 
+Classification models see [Here](https://github.com/LGYoung/VAN-Classification). We are working on it. 
 
 
 ### Abstract: 
